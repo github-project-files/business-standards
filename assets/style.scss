@@ -1,0 +1,1062 @@
+
+@import './../fonts/fonts.scss';
+@import '_variables';
+
+// Foundation
+@import '_reset';
+
+// Bootstrap 
+@import "~bootstrap/scss/bootstrap";
+
+//Custom
+@import "custom";
+
+.bg-color {
+    background: #FEF0E3;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .img-center {
+    margin: 0 auto;
+  }
+  
+  .color-gray {
+    color: #282b32;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  .border-top,
+  .border-bottom {
+    border-top: 1px solid $gray-700 !important;
+    border-bottom: 1px solid $gray-700 !important;
+  }
+  
+  .icons img {
+    width: 32px;
+  }
+  
+  
+  .p-3 {
+    padding: 0.8rem !important;
+  }
+  
+  
+  .nav-link {
+    padding: 0.5rem 0rem;
+  }
+  
+  
+  .nav-scroller .nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border-top: 1px solid $gray-700;
+    border-bottom: 1px solid $gray-700;
+  }
+  
+  .bigstory {
+    h1 {
+      color: #282b32;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      font-family: $font-family;
+    }
+  
+    p {
+      color: #282b32;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  
+  .latestTitle {
+    border-bottom: 1px solid #dbdbdb;
+    font-family: "Inter";
+  
+    .btn {
+      background-color: #f2531a1f;
+      color: $gray-700;
+    }
+  
+    h1 {
+      font-size: 24px;
+      line-height: normal;
+      color: #0d0d0d;
+      font-weight: 700;
+    }
+  }
+  
+  .spotLightSection {
+    background-color: #F7F8FC;
+  
+    .slider-row {
+      overflow: auto;
+  
+      .latestNewsLeft {
+        flex: 0 0 90%;
+        max-width: 90%;
+        padding: 0 10px;
+  
+        @media (min-width:1023px) {
+          max-width: 25%;
+          flex: 0 0 25%;
+        }
+      }
+  
+    }
+  }
+  
+  
+  .latestNewsMiddle,
+  .topicListing {
+    .bigstory {
+      h1 {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $font-family;
+      }
+  
+      &.spotLightCard {
+        background: #fff;
+  
+        h1 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  
+    span {
+      color: $gray-700;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+  
+      span {
+        color: #BC7812;
+      }
+    }
+  }
+
+  .meta-info
+  {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    margin-top: 10px;
+  }
+  
+  .spotlightSection {
+    background-color: #f7f8fc;
+  }
+  
+  .panel-heading h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    width: 75%;
+    padding-top: 8px;
+  }
+  
+  .cardlist {
+    border-bottom: 1px solid #ececec;
+  
+    span {
+      color: $gray-700;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  
+    h2 {
+      color: $gray-700;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #0d0d0d;
+      font-family: $font-family;
+    }
+  }
+  
+  .comment {
+    p {
+      margin: 0px 10px;
+      font-size: 12px;
+    }
+  
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  .cardlist .comment .overlay {
+    --gradient-color: transparent !important;
+  }
+  
+  .imagecard {
+    margin: 0px !important;
+    background-color: #f7f8fc;
+    padding: 30px;
+  }
+  
+  /* Morning show css here*/
+  .morningShow {
+    margin-bottom: 40px;
+    background-color: #fae7da;
+    border-radius: 4px;
+    margin-top: 24px;
+    padding: 16px 12px;
+  
+    h2 {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+  
+  .text-muted {
+    font-family: "Inter", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 16px;
+  }
+  
+  .title h1 {
+    margin-right: 11px;
+  }
+  
+  .small {
+    color: $gray-700;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* end Morning show css here*/
+  
+  /* Poll css here */
+  .radio-label {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 12px;
+    border: 1px solid #e1e5ea;
+    border-radius: 3px;
+    position: relative;
+  }
+  
+  .radio-label input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  
+  .radio-label .lbl {
+    padding-left: 30px;
+  }
+  
+  .radio-label .check {
+    display: block;
+    position: absolute;
+    border: 1px solid $gray-700;
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    top: 0;
+    left: 12px;
+    bottom: 0;
+    z-index: 5;
+    transition: border 0.25s linear;
+    -webkit-transition: border 0.25s linear;
+    margin: auto;
+  }
+  
+  .radio-label:hover .check {
+    border: 1px solid $gray-700;
+  }
+  
+  .radio-label .check::before {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+  }
+  
+  input[type="radio"]:checked~.check {
+    border: 1px solid $gray-700;
+  }
+  
+  input[type="radio"]:checked~.check::before {
+    background: $gray-700;
+  }
+  
+  input[type="radio"]:checked~lbl {
+    color: $gray-700;
+  }
+  
+  :root {
+    --color-primary: #005af0;
+    --space-1: 0.5rem;
+    /* 8px */
+    --space-2: 1rem;
+    /* 16px */
+  }
+  
+  .BD_news_poll {
+    background: #f7f8fc;
+  
+    border: 1px solid #e1e5ea;
+    border-radius: 4px;
+  }
+  
+  .BD_news_poll h2 {
+    border-bottom: 1px solid #e1e5ea;
+    padding: 16px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  
+  .BD_news_poll .BD_news_poll--desc {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 16px 16px 24px 16px;
+    margin: 0;
+  }
+  
+  #BD_news_poll--form {
+    padding: 16px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #BD_news_poll--form.amp-form-submit-success label {
+    display: none;
+  }
+  
+  .poll-success,
+  .poll-error {
+    display: none;
+  }
+  
+  #BD_news_poll--form.amp-form-submit-success .poll-success {
+    display: block;
+  }
+  
+  #BD_news_poll--form.amp-form-submit-error .poll-error {
+    display: block;
+  }
+  
+  #BD_news_poll--form.amp-form-submit-error .poll-success {
+    display: none;
+  }
+  
+  #BD_news_poll--form.amp-form-submit-succeee .poll-error {
+    display: none;
+  }
+  
+  .one-pc-fixed {
+    width: 2px;
+    display: inline-block;
+    background: var(--color-primary);
+    height: var(--space-2);
+  }
+  
+  .BD_news_poll--submit {
+    text-align: right;
+  }
+  
+  .BD_news_poll--submit .view-all-link {
+    margin-right: 10px;
+    font-size: 14px;
+    color: $gray-700;
+    text-decoration: none;
+  }
+  
+  /* End Poll css here */
+  .cardbuttonred {
+    background-color: transparent;
+    border: 1px solid $gray-700;
+    border-radius: 25px;
+    height: 24px;
+    left: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  
+  .cardbuttonred span {
+    color: $gray-700;
+  }
+  
+  .cardbuttongreen {
+    background-color: transparent;
+    border: 1px solid #049e01;
+    border-radius: 25px;
+    height: 24px;
+    left: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  
+  .cardbuttongreen span {
+    color: #049e01;
+  }
+  
+  .Marketstocks p {
+    margin-bottom: 40px;
+    background-color: #f7f8fc;
+    border-radius: 4px;
+    margin-top: 24px;
+    padding: 16px 12px;
+    color: #282b32;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  
+  .cardsection {
+    border-bottom: 4px solid #dbdbdb;
+  }
+  
+  .latestNewsSection {
+    border-bottom: 4px solid #dbdbdb;
+  }
+  
+  .financeSection {
+    background-color: #fae7da;
+  }
+  
+  
+  /* More Markets*/
+  .font-inter {
+    font-family: 'Inter', sans-serif !important;
+    text-decoration: none;
+  }
+  
+  .border-top,
+  .border-bottom {
+    border-top: 1px solid $gray-700 !important;
+    border-bottom: 1px solid $gray-700 !important;
+  }
+  
+  .icons img {
+    width: 32px;
+  }
+  
+  .nav {
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      color: #313038;
+      padding-right: 27px;
+  
+      &:hover {
+        font-size: 16px;
+        color: $gray-700;
+      }
+  
+      &.active {
+        font-size: 16px;
+        color: $gray-700;
+      }
+    }
+  }
+  
+  .border-top-gray {
+    border-top: 4px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+  }
+  
+  .border-bottom-gray {
+    border-bottom: 1px solid #DBDBDB;
+  }
+  
+  ul.pagination li a {
+    color: #0D0D0D !important;
+  }
+  
+  .page-item a {
+    border-right: 2px solid #E8E8E8 !important;
+  }
+  
+  .page-item:last-child a {
+    border-right: 0px solid #DBDBDB !important;
+  }
+  
+  .page-link {
+    padding: 0.3rem 0.4rem;
+    border: 0px solid red;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .maoreonmarket a {
+    margin-right: 15px;
+    line-height: 32px;
+    color: #0D0D0D;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .sub-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .btn-outline-light.btn {
+    background-color: #F7F8FC;
+    padding: 16px;
+    margin-right: 24px;
+    color: #0d0d0d;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  button svg {
+    color: $gray-700;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  
+  /*More Markets */
+  
+  
+  .carouselSlideInner {
+    height: 250px;
+  }
+  
+  h3 {
+    color: #FFC48C;
+  }
+  
+  
+  .carousel-indicators .active {
+    background-color: $gray-700 !important;
+  }
+  
+  .carousel-control-prev {
+    display: none !important;
+  }
+  
+  .carousel-control-next {
+    display: none !important;
+  }
+  
+  /*Pod cost list*/
+  .podcastSection {
+    background-color: #F7F8FC;
+  
+    svg {
+      flex: 0 0 20px;
+      max-width: 20px;
+    }
+  
+    a {
+      color: #0d0d0d;
+      text-decoration: none;
+    }
+  
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      color: #0D0D0D;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  
+  }
+  
+  .podcast_title {
+    margin: 0 0 12px;
+    font-size: 18px;
+    color: #0D0D0D;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  
+  .podcastCardListing .podcastCardListing .podcastCard__title h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  
+  .podcastCardListing .podcastCard__title p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  
+  /*Pod cost feature */
+  
+  .border-none {
+    border-bottom: #DBDBDB 0px solid;
+  }
+  
+  
+  .carouselSlide {
+    display: 'block';
+    width: 100%;
+    padding: 30;
+  
+    .carouselSlideInner {
+      height: 250px;
+    }
+  
+    h3 {
+      color: #FFC48C;
+    }
+  
+  }
+  
+  .carousel-indicators .active {
+    background-color: $gray-700 !important;
+  }
+  
+  .carousel-control-prev {
+    display: none !important;
+    ;
+  }
+  
+  .carousel-control-next {
+    display: none !important;
+    ;
+  }
+  
+  /*Pod cost feature */
+  
+  .border-none {
+    border-bottom: #DBDBDB 0px solid;
+  }
+  
+  .podcastCard__flex,
+  .podcastCard {
+    border-bottom: #DBDBDB 1px solid;
+  }
+  
+  .podcastCard {
+    .podcastCard__flex {
+      svg {
+        flex: 0 0 20px;
+        max-width: 20px;
+      }
+    }
+  
+    .podcastCard__title {
+      padding: 0 0px 0 10px;
+  
+      h2 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+      }
+  
+      p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 8px;
+      }
+  
+      h4 {
+        font-size: 12px;
+        line-height: 26px;
+        margin-top: 8px;
+      }
+  
+      a {
+        text-decoration: none;
+        color: #5F6263;
+  
+        &:hover {
+          color: #5F6263;
+        }
+      }
+    }
+  }
+  
+  .podcastCard img {
+    border-radius: 5px;
+  }
+  
+  /*end of pod cost feature*/
+  /*Pod cost list*/
+  .podcastSection {
+    background-color: #F7F8FC;
+  }
+  
+  .podcastCardListing {
+    .podcastCard__flex {
+      svg {
+        flex: 0 0 20px;
+        max-width: 20px;
+      }
+    }
+  
+    .podcastCard__title {
+      padding: 0 0px 0 10px;
+  
+      h2 {
+        margin: 0 0 12px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+  
+  .currentAffairsSection {
+    background-color: #FEF0E3;
+  }
+  
+  /*End of pod cost listing*/
+  
+  /*Explore starts here */
+  .explore {
+    background:#FAE7DA;
+    border-top:4px solid #D9BAA4;
+    .explore_tittle {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700 !important;
+      @media (min-width:1023px){
+        font-size: 32px;
+        line-height:normal;
+      }
+    }
+  }
+  
+  .tagsDiv {
+    background: #fdf5f0;
+    border-width: 1px 0 1px;
+    border: 1px solid #dbdbdb;
+  
+    .tagsListing {
+      li {
+        list-style: none;
+  
+        margin: 8px 8px 8px 0;
+  
+        a {
+          border: 1px solid#f2c9ad;
+          font-size: 16px;
+          border-radius: 30px;
+          padding: 11px 14px;
+          color: #0d0d0d;
+          text-decoration: none;
+          line-height: 20px;
+          background: #fff;
+          font-weight: 700
+        }
+  
+      }
+    }
+  }
+  
+  
+  .tagsListing li .explore_cards {
+    padding: 30px;
+  }
+  
+  /* Market styles starts here  */
+  .market {
+    color: #0d0d0d;
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px solid #dbdbdb !important;
+  }
+  
+  .market_head {
+    margin-top: 20px;
+  }
+  
+  .market_cards {
+    border-bottom: 1px solid #ececec !important;
+    border-right: 1px solid #ececec !important;
+  }
+  
+  .market_text01 {
+    margin: 0px 10px;
+    color: $gray-700;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  
+  .market_text02 {
+    margin: 0px 10px;
+    color: #bc7812;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  
+  .market_text04 p {
+    margin: 10px;
+    font-size: 12px;
+    color: #282b32;
+  }
+  
+  .market_text04 img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .market_rectangle {
+    margin-top: -30px;
+  }
+  
+  
+  .stockListing {
+    .flex-row {
+      overflow: auto;
+    }
+  
+    .time-text {
+      font-size: 12px;
+    }
+  
+    .card.cardStock {
+      background-color: #F7F8FC;
+      border-radius: 4px;
+      padding: 10px;
+      width: 190px;
+      border: 0px;
+  
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: $gray-700;
+      }
+  
+      h3 {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        min-height: 30px;
+        color: #282B32;
+      }
+  
+      h2 {
+        font-size: 16px;
+        line-height: 22px;
+        color: #282B32;
+        font-weight: 600;
+        margin: 0;
+      }
+  
+      .margin-bottom-0 {
+        margin-bottom: 0px;
+        margin-top: 30px;
+      }
+    }
+  
+    .upper-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #0d0d0d;
+      line-height: 32px;
+  
+      @media (min-width:1023px) {
+        font-size: 32px;
+        line-height: normal;
+      }
+    }
+  
+  }
+  
+  
+  .nav-pills .nav-link.active {
+    background-color: #FAE7DA !important;
+    padding: 6px;
+    color: $gray-700 !important;
+  
+  }
+  
+  .nse-bse-tabs {
+    .nav-item a {
+      padding: 6px;
+      font-size: 14px;
+  
+    }
+  }
+  
+  .nse-bse-tabs {
+    border: 1px solid #E7D4C6;
+    border-radius: 4px;
+  }
+  
+  .nav-pills .show>.nav-link {
+    color: red;
+    border: 1px solid #D9BAA4;
+  }
+  
+  .border-top-gray-4px {
+    border-top: 4px solid #DBDBDB;
+  }
+  
+  .border-top-gray-1px {
+    border-top: 1px solid #DBDBDB;
+  }
+  
+  .border-bottom-gray-1px {
+    border-bottom: 1px solid #DBDBDB;
+  }
+  
+  .overflowx p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #282B32;
+  }
+  
+  
+  .newsCardFlex {
+    overflow: auto;
+    background: #FAE7DA;
+  
+    .cardListing {
+      width: 100%;
+      max-width: 100%;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 90%;
+      -moz-box-flex: 0;
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      background: #fff;
+      margin: 16px 0px 16px 16px;
+  
+      @media (min-width:1023px) {
+        max-width: 25%;
+        flex: 0 0 25%;
+      }
+    }
+  
+    .cardListing__news {
+      .listing {
+        .listing__title {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  
+    .cardListing__header {
+      h3 {
+        font-size: 18px;
+        color: #0d0d0d;
+        font-weight: 700;
+        margin: 0;
+      }
+  
+      label {
+        background: #9E2F2A;
+        position: relative;
+        font-size: 14px;
+        line-height: normal;
+        color: #fff;
+        border-radius: 30px;
+        padding: 5px 10px;
+  
+        input {
+          position: absolute;
+          z-index: 999;
+          opacity: 0;
+        }
+  
+        img {
+          vertical-align: middle;
+          max-width: 16px;
+        }
+      }
+    }
+  }
+  
+  
+  
+  /*end of Top gainers*/
+  
+  
+  @media (max-width: 1024px) {
+    .bigstory h1 {
+      font-size: 24px;
+      font-family: $font-family;
+    }
+  }
+  
+  @media (min-width:1023px) {
+    .btn-outline-light.btn {
+      width: 23%;
+    }
+  
+    .latestTitle {
+  
+      h1 {
+        font-size: 32px;
+      }
+    }
+  
+  
+  /********** FOOTER **********/
+  footer {
+   background-color: $gray-900; 
+   color: $black;
+   a {
+    color: $black !important;
+   }
+  }
+  }

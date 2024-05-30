@@ -1,0 +1,228 @@
+$theme-colors: (
+    "info": tomato,
+    "danger": red,
+    "primary": rgb(241, 34, 131),
+    "default":rgb(24, 22, 22),
+    "navbar-dark": red
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+@media (max-width: 414px) {
+    .header {
+    //   width: 100%;
+    //    border: 5px solid rgb(14, 134, 138);
+        }  
+        .p-3 {padding:0.8rem !important;}
+        #root {margin: 0 16px;}
+        .nav-scroller .nav {
+            flex-wrap: nowrap;
+            overflow-x: auto; 
+            border-top: 1px solid #B22222;
+            border-bottom: 1px solid #B22222;
+          }   
+        .nav a {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size:16px;
+            line-height: 19.36%;
+            color: #313038;
+            padding-right: 35px;
+        }
+        .nav-link {padding: 0.5rem 0rem;}
+        .nav a:hover {font-size:16px; color: #B22222;}
+        .nav a.active {font-size:16px; color: #B22222;}
+
+        /* Morning show css here*/
+        .MorningShow {
+             margin-bottom: 40px;
+            background-color: #FAE7DA; 
+            border-radius: 4px; 
+            margin-top: 24px; 
+            padding: 16px 12px;
+        }
+        .text-muted {
+            font-family: 'Inter', serif; 
+            font-size: 12px; 
+            font-weight: 400; 
+            line-height: 16px; 
+            margin-top: 16px;
+        }
+        .title h1 {margin-right: 11px;}
+        h1 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #101010;
+        }
+        
+        .small {
+            color: #B22222; 
+            font-size: 12px; 
+            font-weight: 700; 
+            line-height: 14px; 
+            margin-bottom: 10px;
+        }
+        /* end Morning show css here*/
+
+        /* The latest block */
+        .TheLatest {border-top: 3px solid #E5E5E5;}
+        .TheLatest h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            color: #0D0D0D;
+            margin: 16px 0;
+        }
+        /* end The Latest css here*/
+        
+        /* Poll css here */
+        .radio-label {
+            display: flex;
+            width: 100%;
+            background:#fff;
+            margin-bottom:14px;
+            font-size:14px;
+            line-height:18px;
+            padding:12px 12px;
+            border:1px solid #E1E5EA;
+            border-radius: 3px;
+            position:relative;
+        }
+        .radio-label input[type=radio]{
+            position: absolute;
+            visibility: hidden;
+            width:24px;
+            height:24px;
+            top:0;
+            bottom:0;
+            left:0;
+            margin:auto;
+        }
+
+        .radio-label .lbl {
+            padding-left:30px;
+        }
+
+        .radio-label .check{
+            display: block;
+            position: absolute;
+            border: 1px solid #B22222;
+            border-radius: 100%;
+            height: 24px;
+            width: 24px;
+            top: 0;
+            left: 12px;
+            bottom:0;
+            z-index: 5;
+            transition: border .25s linear;
+            -webkit-transition: border .25s linear;
+            margin:auto;
+        }
+        .radio-label:hover .check {
+            border: 1px solid #B22222;;
+        }
+        .radio-label .check::before {
+            display: block;
+            position: absolute;
+            content: '';
+            border-radius: 100%;
+            height: 16px;
+            width: 16px;
+            top: 0px;
+            left: 0px;
+            right:0;
+            bottom:0;
+            margin: auto;
+              transition: background 0.25s linear;
+              -webkit-transition: background 0.25s linear;
+          }
+          
+          input[type=radio]:checked ~ .check {
+            border: 1px solid #B22222;
+          }
+          
+          input[type=radio]:checked ~ .check::before{
+            background: #B22222;
+          }
+          
+          input[type=radio]:checked ~ lbl{
+            color: #B22222;
+          }
+            :root {
+            --color-primary: #005AF0;
+            --space-1: .5rem;  /* 8px */
+            --space-2: 1rem;   /* 16px */
+            }
+            .BD_news_poll {
+                background: #F7F8FC;
+
+            border: 1px solid #E1E5EA;
+            border-radius: 4px;
+            }
+            .BD_news_poll h2 {
+                border-bottom: 1px solid #E1E5EA; 
+                padding:16px;
+                margin:0;
+                font-size:24px;
+                line-height:32px;
+                font-weight:700;
+            }
+            .BD_news_poll .BD_news_poll--desc {
+                font-size:20px;
+                line-height:24px;
+                font-weight:700;
+                padding:16px 16px 24px 16px;
+                margin:0;
+            }
+            #BD_news_poll--form {
+                padding:16px;
+                padding-top:0;
+                display: flex;
+                flex-direction: column;
+            }
+            #BD_news_poll--form.amp-form-submit-success label {
+                display: none;
+            }
+            .poll-success, .poll-error {
+                display:none;
+            }
+            #BD_news_poll--form.amp-form-submit-success .poll-success {
+                display:block;
+            }
+            #BD_news_poll--form.amp-form-submit-error .poll-error {
+                display:block;
+            }
+            #BD_news_poll--form.amp-form-submit-error .poll-success {
+                display:none;
+            }
+            #BD_news_poll--form.amp-form-submit-succeee .poll-error {
+                display:none;
+            }
+            .one-pc-fixed {
+                width: 2px;
+                display: inline-block;
+                background: var(--color-primary);
+                height: var(--space-2);
+                float: left;
+            }
+            .BD_news_poll--submit {
+                text-align:right;
+            }
+            .BD_news_poll--submit .view-all-link {
+                margin-right:10px;
+                font-size:14px;
+
+            }
+            /* End Poll css here */
+            .listing .listing__title{
+                font-size:18px;
+                line-height:24px;
+            }
+    }
+    
